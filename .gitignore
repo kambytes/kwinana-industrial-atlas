@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data artifacts: retain directory placeholders, ignore downloads and outputs
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Quarto
+.quarto/
