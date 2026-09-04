@@ -1,0 +1,31 @@
+[project]
+name = "kwinana-industrial-atlas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kamlesh", email = "itskamleshkumar.s@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.5",
+    "geopandas>=1.1.4",
+    "pandera>=0.33.1",
+    "polars>=1.44.1",
+    "pyproj>=3.7.2",
+    "shapely>=2.1.2",
+]
+
+[project.scripts]
+kwinana-industrial-atlas = "kwinana_industrial_atlas:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.6",
+]

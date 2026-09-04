@@ -6,6 +6,10 @@ __pycache__/
 .ruff_cache/
 .venv/
 
+# Environment / secrets
+.env
+.env.*
+
 # Notebooks
 .ipynb_checkpoints/
 
@@ -19,3 +23,7 @@ data/processed/*
 
 # Quarto
 .quarto/
+_site/
+
+# OS
+.DS_Store
